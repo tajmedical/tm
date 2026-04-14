@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tajmedicalandgeneralstore.github.io/TajMedic/sitemap.xml
