@@ -258,7 +258,16 @@ body {
         .contact-action { display: flex; align-items: center; gap: 24px; padding: 30px; background: white; border-radius: 32px; border: 1px solid var(--slate-100); text-decoration: none; color: inherit; transition: var(--transition); box-shadow: var(--shadow-soft); }
         .contact-action:hover { transform: scale(1.02); border-color: var(--emerald-400); box-shadow: var(--shadow-hover); }
         .c-icon { width: 70px; height: 70px; border-radius: 24px; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; }
-        .map-wrapper { height: 500px; border-radius: 40px; overflow: hidden; border: 10px solid white; box-shadow: var(--shadow-hover); margin-bottom: 80px; }
+        .map-wrapper { 
+    height: 500px; 
+    border-radius: 40px; 
+    overflow: hidden; 
+    border: 10px solid white; 
+    box-shadow: var(--shadow-hover); 
+    margin-bottom: 80px;
+    /* This line is critical to keep the info box inside the map area */
+    position: relative; 
+}
 
         /* Review Forms */
         .form-group { margin-bottom: 24px; }
@@ -581,17 +590,52 @@ body {
                 </a>
             </div>
 
-            <!-- Map -->
-            <div class="map-wrapper">
-                <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=Chak%2099%20GB%20Nehang%20Jaranwala&t=&z=15&ie=UTF8&iwloc=&output=embed"></iframe>
-                <div style="position: absolute; bottom: 30px; left: 30px; background: rgba(255,255,255,0.9); backdrop-filter: blur(10px); padding: 24px; border-radius: 24px; box-shadow: var(--shadow-soft); display: flex; align-items: center; gap: 16px; border: 1px solid var(--slate-200);">
-                    <i class="fas fa-location-dot" style="font-size: 2rem; color: var(--rose-600);"></i>
-                    <div>
-                        <h4 style="font-size: 1.1rem; font-weight: 900; color: var(--slate-900);">Store Location</h4>
-                        <p style="font-size: 0.8rem; font-weight: 700; color: var(--slate-500); text-transform: uppercase;">Chak 99 GB Nehang, Badala Road, Jaranwala</p>
-                    </div>
-                </div>
-            </div>
+                        <!-- Map -->
+<div class="map-wrapper">
+<iframe 
+    width="100%" 
+    height="100%" 
+    frameborder="0" 
+    style="border:0;" 
+    src="https://maps.google.com/maps?q=Chak%2099%20GB%20Nehang,%20Jaranwala&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+    allowfullscreen>
+</iframe>
+
+    <div class="location-floating-card">
+        <i class="fas fa-location-dot"></i>
+        <div>
+            <h4>Store Location</h4>
+            <p>Chak 99 GB Nehang, Badala Road, Jaranwala</p>
+        </div>
+    </div>
+</div>
+
+<style>
+/* Add this to your CSS to handle the floating box better */
+.location-floating-card {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px; /* Ensures it doesn't bleed off screen on mobile */
+    background: rgba(255,255,255,0.95);
+    backdrop-filter: blur(10px);
+    padding: 15px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border: 1px solid var(--slate-200);
+    z-index: 10;
+}
+
+.location-floating-card i { font-size: 1.5rem; color: var(--rose-600); }
+.location-floating-card h4 { font-size: 0.9rem; font-weight: 900; margin: 0; }
+.location-floating-card p { font-size: 0.7rem; font-weight: 700; margin: 0; text-transform: uppercase; }
+
+@media (min-width: 768px) {
+    .location-floating-card { width: max-content; right: auto; padding: 24px; }
+}
+</style>
         </section>
     </main>
 
