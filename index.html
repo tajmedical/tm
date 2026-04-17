@@ -615,14 +615,14 @@ body {
 .location-floating-card {
     position: absolute;
     bottom: 20px;
-    left: 20px;
-    right: 20px; /* Ensures it doesn't bleed off screen on mobile */
+    left: 15px;
+    right: 15px; /* Ensures it doesn't bleed off screen on mobile */
     background: rgba(255,255,255,0.95);
     backdrop-filter: blur(10px);
     padding: 15px;
     border-radius: 20px;
     display: flex;
-    align-items: center;
+    align-items: right;
     gap: 12px;
     border: 1px solid var(--slate-200);
     z-index: 10;
@@ -632,8 +632,8 @@ body {
 .location-floating-card h4 { font-size: 0.9rem; font-weight: 900; margin: 0; }
 .location-floating-card p { font-size: 0.7rem; font-weight: 700; margin: 0; text-transform: uppercase; }
 
-@media (min-width: 768px) {
-    .location-floating-card { width: 150px; right: auto; padding: 24px; }
+@media (max-width: 200px) {
+    .location-floating-card { width: 200px; right: auto; padding: 24px; }
 }
 </style>
         </section>
