@@ -598,7 +598,7 @@ body {
             height="100%" 
             frameborder="0" 
             style="border:0;" 
-            src="https://maps.google.com/maps?q=Chak%2099%20GB%20Nehang,%20Jaranwala&t=&z=15&ie=UTF8&iwloc=&output=embed"
+            src="https://www.google.com/maps?q=TAJ+MEDICAL+AND+GENERAL+STORE+99+GB+Nehang+Badala&output=embed" 
             allowfullscreen>
         </iframe>
 
@@ -606,7 +606,7 @@ body {
             <i class="fas fa-location-dot"></i>
             <div class="card-content">
                 <h4>Store Location</h4>
-                <p>Chak 99 GB Nehang, Badala Road, Jaranwala</p>
+                <p>99 GB Nehang, Badala Road, Jaranwala</p>
             </div>
         </div>
     </div>
@@ -623,7 +623,7 @@ body {
 .map-wrapper {
     position: relative;
     width: 100%;
-    max-width: 1200px; /* Limits size on large screens */
+    max-width: 1200px;
     height: 500px;
     border-radius: 24px;
     overflow: hidden;
@@ -633,50 +633,42 @@ body {
 /* --- Floating Card Styles --- */
 .location-floating-card {
     position: absolute;
-    /* Anchored bottom-left to avoid Google's bottom-right buttons */
-    bottom: 25px;
-    left: 20px;
-    background: rgba(255, 255, 255, 0.9);
+    /* Move it up significantly to clear Google's bottom UI */
+    bottom: 80px; 
+    left: 15px;
+    background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(12px);
-    padding: 15px 20px;
-    border-radius: 18px;
+    padding: 12px 15px;
+    border-radius: 15px;
     display: flex;
     align-items: center;
-    gap: 15px;
-    border: 1px solid rgba(255,255,255,0.3);
-    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+    gap: 12px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     z-index: 10;
-    max-width: 320px;
+    max-width: 280px; /* Keeps it narrow on desktop */
 }
 
-.location-floating-card i { font-size: 1.4rem; color: #e11d48; }
-.card-content h4 { margin: 0; font-size: 0.95rem; font-weight: 800; color: #1e293b; }
-.card-content p { margin: 2px 0 0; font-size: 0.75rem; color: #64748b; font-weight: 600; text-transform: uppercase; line-height: 1.3; }
+.location-floating-card i { font-size: 1.2rem; color: #e11d48; }
+.card-content h4 { margin: 0; font-size: 0.85rem; font-weight: 800; color: #1e293b; }
+.card-content p { margin: 2px 0 0; font-size: 0.65rem; color: #64748b; font-weight: 600; text-transform: uppercase; }
 
 /* --- Mobile Fixes --- */
 @media (max-width: 768px) {
-    .map-section-container {
-        padding: 10px;
-    }
-
     .map-wrapper {
-        width: 100%; /* Full width for better visibility */
-        height: 400px; /* Give it enough vertical space */
-        border-radius: 20px;
+        width: 100%; /* Restores full width for readability */
+        height: 450px;
     }
 
     .location-floating-card {
-        bottom: 15px;
+        /* On mobile, we place it near the top or higher up 
+           to ensure the bottom "Directions" and "Zoom" buttons are clear */
+        bottom: auto;
+        top: 15px; 
         left: 10px;
-        right: 10px; /* Centers it slightly on small screens */
+        right: 10px;
         max-width: calc(100% - 20px);
-        padding: 12px;
-        gap: 10px;
     }
-
-    /* Shrink text slightly on mobile to keep it from feeling bulky */
-    .card-content h4 { font-size: 0.85rem; }
-    .card-content p { font-size: 0.65rem; }
 }
 </style>
         </section>
