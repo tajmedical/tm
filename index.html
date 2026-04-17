@@ -591,49 +591,148 @@ body {
             </div>
 
                         <!-- Map -->
-<div class="map-wrapper">
-<iframe 
-    width="100%" 
-    height="100%" 
-    frameborder="0" 
-    style="border:0;" 
-    src="https://maps.google.com/maps?q=Chak%2099%20GB%20Nehang,%20Jaranwala&t=&z=15&ie=UTF8&iwloc=&output=embed" 
-    allowfullscreen>
-</iframe>
+<div class="map-container-main">
+    
+    <div class="map-wrapper">
+        <iframe 
+            width="100%" 
+            height="100%" 
+            frameborder="0" 
+            style="border:0;" 
+            src="https://maps.google.com/maps?q=Chak%2099%20GB%20Nehang,%20Jaranwala&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+            allowfullscreen>
+        </iframe>
 
-    <div class="location-floating-card">
-        <i class="fas fa-location-dot"></i>
-        <div>
-            <h4>Store Location</h4>
-            <p>Chak 99 GB Nehang, Badala Road, Jaranwala</p>
+        <div class="location-floating-card">
+            <i class="fas fa-location-dot"></i>
+            <div>
+                <h4>Store Location</h4>
+                <p>Chak 99 GB Nehang, Badala Road, Jaranwala</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="map-controls">
+        <div class="d-pad">
+            <button class="ctrl-btn up" aria-label="Up"><i class="fas fa-chevron-up"></i></button>
+            <div class="mid-row">
+                <button class="ctrl-btn left" aria-label="Left"><i class="fas fa-chevron-left"></i></button>
+                <button class="ctrl-btn right" aria-label="Right"><i class="fas fa-chevron-right"></i></button>
+            </div>
+            <button class="ctrl-btn down" aria-label="Down"><i class="fas fa-chevron-down"></i></button>
+        </div>
+
+        <div class="zoom-group">
+            <button class="ctrl-btn zoom" aria-label="Zoom In"><i class="fas fa-plus"></i></button>
+            <button class="ctrl-btn zoom" aria-label="Zoom Out"><i class="fas fa-minus"></i></button>
         </div>
     </div>
 </div>
 
 <style>
-/* Add this to your CSS to handle the floating box better */
+/* --- Layout Foundation --- */
+.map-container-main {
+    display: flex;
+    flex-direction: row; /* Desktop: side-by-side */
+    gap: 20px;
+    padding: 20px;
+    background: #f8fafc;
+    border-radius: 12px;
+}
+
+.map-wrapper {
+    position: relative;
+    flex: 2; /* Map takes more space on desktop */
+    height: 450px;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid #e2e8f0;
+}
+
+/* --- Control Panel Styling --- */
+.map-controls {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.d-pad {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.mid-row {
+    display: flex;
+    gap: 40px;
+}
+
+.ctrl-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    border: 1px solid #cbd5e1;
+    background: white;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #475569;
+}
+
+.ctrl-btn:hover { background: #f1f5f9; color: #1e293b; }
+
+.zoom-group {
+    display: flex;
+    gap: 10px;
+}
+
+/* --- Original Floating Card Styles --- */
 .location-floating-card {
     position: absolute;
-    bottom: 20px;
+    bottom: 15px;
     left: 15px;
-    right: 15px; /* Ensures it doesn't bleed off screen on mobile */
+    right: 15px;
     background: rgba(255,255,255,0.95);
     backdrop-filter: blur(10px);
-    padding: 15px;
-    border-radius: 20px;
+    padding: 12px;
+    border-radius: 12px;
     display: flex;
-    align-items: right;
+    align-items: center;
     gap: 12px;
-    border: 1px solid var(--slate-200);
+    border: 1px solid #e2e8f0;
     z-index: 10;
 }
 
-.location-floating-card i { font-size: 1.5rem; color: var(--rose-600); }
-.location-floating-card h4 { font-size: 0.9rem; font-weight: 900; margin: 0; }
-.location-floating-card p { font-size: 0.7rem; font-weight: 700; margin: 0; text-transform: uppercase; }
+.location-floating-card i { font-size: 1.2rem; color: #e11d48; }
+.location-floating-card h4 { font-size: 0.8rem; font-weight: 900; margin: 0; }
+.location-floating-card p { font-size: 0.65rem; font-weight: 700; margin: 0; text-transform: uppercase; color: #64748b; }
 
-@media (max-width: 200px) {
-    .location-floating-card { width: 200px; right: auto; padding: 24px; }
+/* --- Mobile View Adjustments --- */
+@media (max-width: 768px) {
+    .map-container-main {
+        flex-direction: column; /* Stack vertically */
+        align-items: center;
+    }
+
+    .map-wrapper {
+        width: 50%; /* Halved width as requested */
+        height: 300px;
+        flex: none; /* Disable flex growth */
+    }
+
+    .map-controls {
+        width: 100%;
+    }
 }
 </style>
         </section>
