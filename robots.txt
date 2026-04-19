@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://tajmedicalandgeneralstore.github.io/TajMedic/sitemap.xml
+# Link to your new sitemap
+Sitemap: https://tajmedical.github.io/tm/sitemap.xml
