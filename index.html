@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Taj Medical Store 99 GB | Muhammad Pervaiz | Chak 99 GB Nehang</title>
+
+    <meta name="description" content="Taj Medical Store 99 GB (Muhammad Pervaiz) - Chak 99 GB Nehang, Jaranwala. Hamare paas 100% asli dawaiyan aur baby care items maujood hain.">
+<meta name="keywords" content="Taj Medical Store 99 GB, Medical Store in 99 GB Nehang, Muhammad Pervaiz Medical Store, Pharmacy Jaranwala">
+
+    <link rel="canonical" href="https://tajmedicalandgeneralstore.github.io/TajMedicalStore/" />
+    
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+    
+    <style>
+/* --- VISIBLE DARK MEDICAL INTERIOR --- */
+body {
+    /* High-contrast interior: visible cabinets and medical environment */
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), 
+        url('https://images.unsplash.com/photo-1576602976047-174e57a47881?q=80&w=2000');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+/* This dims your layout boxes so the background building is visible around them */
+.glass-box, .contact-action, .proprietor-box, .glass-card {
+    background: rgba(255, 255, 255, 0.9) !important; /* Slightly transparent white */
+    backdrop-filter: blur(8px); /* Blurs the background only behind the box */
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Ensures the page content area doesn't have its own solid background */
+.view-page {
+    background: transparent !important;
+}
+
+/* Boosts readability for titles against the dark store background */
+.hero-title, .section-title {
+    color: #ffffff !important;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+}
+        /* --- PURE CSS DESIGN SYSTEM --- */
+        :root {
+            --emerald-50: #ecfdf5; --emerald-100: #d1fae5; --emerald-500: #10b981; --emerald-600: #059669; --emerald-700: #047857; --emerald-900: #064e3b;
+            --slate-50: #f8fafc; --slate-100: #f1f5f9; --slate-200: #e2e8f0; --slate-400: #94a3b8; --slate-500: #64748b; --slate-700: #334155; --slate-800: #1e293b; --slate-900: #0f172a;
+            --rose-50: #fff1f2; --rose-500: #f43f5e; --rose-600: #e11d48; --rose-900: #881337;
+            --amber-50: #fffbeb; --amber-500: #f59e0b; --amber-600: #d97706;
+            --blue-50: #eff6ff; --blue-500: #3b82f6; --blue-600: #2563eb;
+            --taj-blue: #1a5ca3; /* Perfect Blue for Taj Logo */
+            --glass-bg: rgba(255, 255, 255, 0.9);
+            --shadow-soft: 0 10px 40px -10px rgba(0,0,0,0.08);
+            --shadow-hover: 0 20px 50px -10px rgba(0,0,0,0.15);
+            --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+        html { scroll-behavior: smooth; }
+        body { 
+            font-family: 'Plus Jakarta Sans', sans-serif; 
+            color: var(--slate-800);
+            background-color: var(--slate-50);
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        /* Utilities */
+        .container { max-width: 1280px; margin: 0 auto; padding: 0 24px; }
+        .section-title { font-size: clamp(2rem, 4vw, 2.8rem); font-weight: 900; margin-bottom: 16px; letter-spacing: -1px; color: var(--slate-900); }
+        .section-subtitle { font-size: 1rem; color: var(--slate-500); font-weight: 600; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 48px; display: block; }
+        .text-center { text-align: center; }
+
+        /* Marquee (Top Bar) */
+        .marquee-bar { background: var(--rose-900); color: white; overflow: hidden; white-space: nowrap; padding: 12px 0; font-weight: 800; font-size: 0.75rem; position: sticky; top: 0; z-index: 1001; }
+        .marquee-content { display: inline-flex; animation: scroll 35s linear infinite; gap: 4rem; }
+        @keyframes scroll { from { transform: translateX(100%); } to { transform: translateX(-100%); } }
+
+        /* =========================================================
+           NEW HEADER STYLES (MentR Style + Pure CSS Logo)
+           ========================================================= */
+        header { 
+            position: sticky; 
+            top: 40px; 
+            background: rgba(255,255,255,0.98); 
+            backdrop-filter: blur(12px); 
+            z-index: 1000; 
+            border-bottom: 1px solid var(--slate-200); 
+            padding: 10px 0; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        .header-inner { display: flex; justify-content: space-between; align-items: center; }
+        
+        /* Brand Left Side */
+        .brand-section { display: flex; align-items: center; gap: 12px; cursor: pointer; }
+        
+        /* --- PURE CSS CUSTOM LOGO --- */
+        .brand-logo-custom {
+            position: relative;
+            width: 44px;
+            height: 44px;
+            background: linear-gradient(135deg, var(--taj-blue), #0f3768);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 10px rgba(26, 92, 163, 0.25);
+            flex-shrink: 0;
+        }
+        .brand-logo-custom .t-letter {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 30px;
+            font-weight: 900;
+            color: white;
+            line-height: 1;
+            margin-right: 2px;
+            margin-bottom: 2px;
+        }
+        .brand-logo-custom .heart-icon {
+            position: absolute;
+            bottom: -5px;
+            right: -5px;
+            background: white;
+            color: var(--taj-blue);
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 11px;
+            border: 2px solid var(--taj-blue);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+        }
+        
+        /* Brand Text */
+        .brand-text { display: flex; flex-direction: column; justify-content: center; margin-top: 3px; }
+        .brand-text h1 { 
+            font-family: 'Montserrat', sans-serif; 
+            font-size: 1.5rem; 
+            font-weight: 900; 
+            color: var(--taj-blue); 
+            letter-spacing: -0.5px; 
+            line-height: 0.9; 
+            margin: 0;
+        }
+        .brand-text p { 
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.55rem; 
+            color: var(--slate-600); 
+            font-weight: 800; 
+            letter-spacing: 0.5px; 
+            margin-top: 3px;
+        }
+
+        /* Action Buttons Right Side (MentR Style) */
+        .header-actions { display: flex; align-items: center; gap: 8px; }
+        
+        .action-btn { 
+            width: 40px; 
+            height: 40px; 
+            border-radius: 8px; 
+            border: 1px solid var(--slate-200); 
+            background: white; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            cursor: pointer; 
+            transition: var(--transition);
+            text-decoration: none;
+            position: relative;
+        }
+        .action-btn:hover { background: var(--slate-50); border-color: var(--slate-300); transform: translateY(-2px); }
+        .action-btn i { font-size: 1.25rem; }
+        
+        .btn-wa i { color: #25d366; } /* WhatsApp Green */
+        .btn-menu i { color: var(--slate-700); } 
+
+        /* Red Dot Badge jesa k MentR cart par tha */
+        .badge-dot {
+            position: absolute;
+            top: -4px;
+            right: -4px;
+            width: 12px;
+            height: 12px;
+            background-color: #ef4444; 
+            border-radius: 50%;
+            border: 2px solid white;
+        }
+        /* ========================================================= */
+
+        /* Sidebar */
+        .sidebar { 
+    position: fixed; 
+    top: 0; 
+    right: 0; /* Changed from left: 0 */
+    width: 320px; 
+    height: 100vh; 
+    background: white; 
+    z-index: 2001; 
+    transform: translateX(100%); /* Changed from -100% to hide it off-screen to the right */
+    transition: var(--transition); 
+    box-shadow: -20px 0 50px rgba(0,0,0,0.1); /* Shadow flipped to the left */
+    display: flex; 
+    flex-direction: column; 
+}
+
+.sidebar.active { 
+    transform: translateX(0); 
+}
+
+        .sidebar-overlay.active { opacity: 1; visibility: visible; }
+        .sb-header { padding: 30px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--slate-100); }
+        .sb-menu { padding: 20px 30px; flex-grow: 1; overflow-y: auto; display: flex; flex-direction: column; gap: 8px; }
+        .sb-link { display: flex; align-items: center; gap: 16px; padding: 14px 16px; border-radius: 12px; color: var(--slate-600); text-decoration: none; font-weight: 700; font-size: 0.9rem; transition: var(--transition); border: none; background: transparent; cursor: pointer; text-align: left; }
+        .sb-link:hover, .sb-link.active { background: var(--emerald-50); color: var(--emerald-600); }
+        .sb-link i { width: 20px; text-align: center; font-size: 1.1rem; }
+
+        /* Views (SPA Logic) */
+        .view-page { display: none; animation: fadeIn 0.5s ease; padding-bottom: 80px; }
+        .view-page.active { display: block; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(15px); } to { opacity: 1; transform: translateY(0); } }
+
+        /* Hero */
+        .hero-section { padding: 80px 0; text-align: center; position: relative; }
+        .hero-title { font-size: clamp(3rem, 7vw, 5rem); font-weight: 900; line-height: 1.05; margin-bottom: 24px; letter-spacing: -2px; color: var(--slate-900); }
+        .hero-desc { font-size: 1.1rem; color: var(--slate-500); max-width: 700px; margin: 0 auto 40px; font-weight: 500; }
+        
+        .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 18px 36px; border-radius: 16px; font-weight: 900; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; cursor: pointer; transition: var(--transition); border: none; text-decoration: none; }
+        .btn-primary { background: var(--emerald-600); color: white; box-shadow: 0 10px 20px rgba(5, 150, 105, 0.2); }
+        .btn-primary:hover { background: var(--emerald-700); transform: translateY(-2px); }
+        .btn-outline { background: white; color: var(--slate-900); border: 2px solid var(--slate-200); }
+        .btn-outline:hover { border-color: var(--emerald-500); color: var(--emerald-600); }
+
+        /* Vast About Section */
+        .vast-about { position: relative; padding: 100px 0; margin-top: 40px; }
+        .vast-bg { position: absolute; inset: 0; background: url('https://images.unsplash.com/photo-1559839734-2b71f1536b8a?q=80&w=2000') center/cover fixed; z-index: -2; }
+        .vast-overlay { position: absolute; inset: 0; background: linear-gradient(to right, rgba(15, 23, 42, 0.95), rgba(15, 23, 42, 0.8)); z-index: -1; }
+        .about-content { display: grid; grid-template-columns: 1fr; gap: 40px; color: white; }
+        @media (min-width: 992px) { .about-content { grid-template-columns: 1.2fr 0.8fr; align-items: center; } }
+        .proprietor-box { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); padding: 40px; border-radius: 32px; backdrop-filter: blur(10px); }
+
+        /* Ethics Boxes (Red, Yellow, Blue) */
+        .ethics-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin: 80px 0; }
+        .ethic-card { padding: 40px; border-radius: 32px; color: white; transition: var(--transition); }
+        .ethic-card:hover { transform: translateY(-10px); }
+        .ethic-red { background: linear-gradient(135deg, var(--rose-600), var(--rose-900)); box-shadow: 0 15px 30px rgba(225, 29, 72, 0.2); }
+        .ethic-yellow { background: linear-gradient(135deg, var(--amber-500), #b45309); box-shadow: 0 15px 30px rgba(245, 158, 11, 0.2); }
+        .ethic-blue { background: linear-gradient(135deg, var(--blue-500), var(--blue-600)); box-shadow: 0 15px 30px rgba(59, 130, 246, 0.2); }
+        .ethic-card i { font-size: 3rem; margin-bottom: 24px; opacity: 0.9; }
+        .ethic-card h4 { font-size: 1.5rem; font-weight: 900; margin-bottom: 12px; }
+        .ethic-card p { font-size: 0.95rem; font-weight: 500; opacity: 0.9; line-height: 1.6; }
+
+        /* General Grids (Qualities, Services, FAQ) */
+        .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; margin-bottom: 80px; }
+        .glass-box { background: white; padding: 40px; border-radius: 32px; border: 1px solid var(--slate-100); box-shadow: var(--shadow-soft); transition: var(--transition); }
+        .glass-box:hover { transform: translateY(-5px); box-shadow: var(--shadow-hover); border-color: var(--emerald-200); }
+        .icon-wrap { width: 64px; height: 64px; border-radius: 20px; background: var(--emerald-50); color: var(--emerald-600); display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 24px; }
+
+        /* Categories with Images */
+        .cat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 24px; margin-bottom: 80px; }
+        .cat-card { position: relative; border-radius: 32px; overflow: hidden; height: 280px; cursor: pointer; }
+        .cat-bg { position: absolute; inset: 0; background-size: cover; background-position: center; transition: transform 0.7s ease; }
+        .cat-card:hover .cat-bg { transform: scale(1.1); }
+        .cat-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(15,23,42,0.9), transparent); display: flex; align-items: flex-end; padding: 30px; }
+        .cat-title { color: white; font-weight: 900; font-size: 1.2rem; text-transform: uppercase; letter-spacing: 1px; }
+
+        /* Contact Containers & Map */
+        .contact-hub { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; margin-bottom: 40px; }
+        .contact-action { display: flex; align-items: center; gap: 24px; padding: 30px; background: white; border-radius: 32px; border: 1px solid var(--slate-100); text-decoration: none; color: inherit; transition: var(--transition); box-shadow: var(--shadow-soft); }
+        .contact-action:hover { transform: scale(1.02); border-color: var(--emerald-400); box-shadow: var(--shadow-hover); }
+        .c-icon { width: 70px; height: 70px; border-radius: 24px; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; }
+        .map-wrapper { 
+    height: 500px; 
+    border-radius: 40px; 
+    overflow: hidden; 
+    border: 10px solid white; 
+    box-shadow: var(--shadow-hover); 
+    margin-bottom: 80px;
+    /* This line is critical to keep the info box inside the map area */
+    position: relative; 
+}
+
+        /* Review Forms */
+        .form-group { margin-bottom: 24px; }
+        .form-label { display: block; font-size: 11px; font-weight: 900; text-transform: uppercase; color: var(--slate-500); margin-bottom: 10px; letter-spacing: 1px; }
+        .form-input { width: 100%; padding: 20px; border-radius: 20px; border: 2px solid var(--slate-100); background: var(--slate-50); font-family: inherit; font-size: 1rem; font-weight: 600; outline: none; transition: var(--transition); }
+        .form-input:focus { border-color: var(--emerald-500); background: white; }
+        .star-rating { display: flex; gap: 16px; font-size: 2rem; margin-bottom: 16px; color: var(--slate-200); }
+        .star-rating i { cursor: pointer; transition: 0.2s; }
+        .star-rating i.active { color: var(--amber-500); }
+        
+        /* Mega Footer */
+        footer { background: var(--slate-900); color: white; padding: 80px 0 40px; margin-top: 60px; }
+        .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; margin-bottom: 60px; }
+        .footer-col h4 { font-size: 12px; font-weight: 900; color: var(--emerald-500); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 24px; }
+        .footer-links { list-style: none; }
+        .footer-links li { margin-bottom: 16px; }
+        .footer-links a, .footer-links button { color: var(--slate-400); text-decoration: none; font-weight: 600; font-size: 0.95rem; transition: var(--transition); background: none; border: none; cursor: pointer; font-family: inherit; }
+        .footer-links a:hover, .footer-links button:hover { color: white; padding-left: 8px; }
+        .strict-policy { display: inline-block; padding: 16px 32px; background: rgba(225, 29, 72, 0.1); border: 1px solid var(--rose-600); color: var(--rose-500); border-radius: 99px; font-size: 0.75rem; font-weight: 900; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 30px; }
+
+        .social-links { display: flex; gap: 15px; align-items: center; }
+        .social-icon { display: flex; align-items: center; justify-content: center; width: 50px; height: 50px; text-decoration: none; border-radius: 50%; transition: all 0.3s ease; font-size: 22px; color: white; }
+        .facebook { background-color: #3b5998; }
+        .instagram { background-color: #e4405f; }
+        .whatsapp { background-color: #25d366; }
+        .social-icon:hover { transform: translateY(-5px); filter: brightness(1.1); box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
+
+        .back-to-top { position: fixed; bottom: 30px; right: 30px; width: 60px; height: 60px; border-radius: 20px; background: var(--emerald-600); color: white; border: none; font-size: 1.5rem; cursor: pointer; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 25px rgba(16, 185, 129, 0.4); opacity: 0; visibility: hidden; transition: var(--transition); z-index: 1000; }
+        .back-to-top.show { opacity: 1; visibility: visible; }
+    </style>
+</head>
+<body>
+
+    <!-- Urgent Notice Marquee -->
+    <div class="marquee-bar">
+        <div class="marquee-content uppercase">
+            <span><i class="fas fa-ban" style="color: #fde047; margin-right:8px;"></i> ZERO HOME DELIVERY: Customers must visit the store physically.</span>
+            <span><i class="fas fa-id-card" style="color: #93c5fd; margin-right:8px;"></i> CNIC & Original Prescription Required for Narcotics & Controlled Drugs.</span>
+            <span><i class="fas fa-shield-check" style="color: #6ee7b7; margin-right:8px;"></i> 100% Genuine Medicine Guarantee by Proprietor Muhammad Pervaiz.</span>
+            <span><i class="fas fa-clock" style="margin-right:8px;"></i> Operating Hours: 06:00 AM - 03:00 PM | 07:00 PM - 10:00 PM.</span>
+        </div>
+    </div>
+
+    <!-- Sidebar & Overlay -->
+    <div id="sidebarOverlay" class="sidebar-overlay" onclick="toggleSidebar()"></div>
+    <aside id="sidebar" class="sidebar">
+        <div class="sb-header">
+            <div>
+                <h2 style="font-weight: 900; color: var(--taj-blue); font-size: 1.5rem; line-height: 1; font-family: 'Montserrat', sans-serif;">TAJ HUB</h2>
+                <p style="font-size: 9px; font-weight: 900; color: var(--slate-400); letter-spacing: 2px; text-transform: uppercase; margin-top: 4px;">Main Menu</p>
+            </div>
+            <!-- Sidebar close button -->
+            <button class="action-btn" onclick="toggleSidebar()"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="sb-menu">
+            <button onclick="showPage('home')" class="sb-link active" id="nav-home"><i class="fas fa-house"></i> Home Dashboard</button>
+            <button onclick="scrollToSection('about')" class="sb-link"><i class="fas fa-user-tie"></i> Vast About Us</button>
+            <button onclick="scrollToSection('ethics')" class="sb-link"><i class="fas fa-balance-scale"></i> Our Ethics</button>
+            <button onclick="scrollToSection('services')" class="sb-link"><i class="fas fa-hand-holding-medical"></i> Our Services</button>
+            <button onclick="scrollToSection('categories')" class="sb-link"><i class="fas fa-layer-group"></i> Categories</button>
+            <button onclick="scrollToSection('faq')" class="sb-link"><i class="fas fa-circle-question"></i> FAQ</button>
+            <button onclick="showPage('reviews')" class="sb-link" id="nav-reviews"><i class="fas fa-star"></i> Review Portal</button>
+            <button onclick="scrollToSection('contact')" class="sb-link"><i class="fas fa-map-location-dot"></i> Contact & Map</button>
+        </div>
+        <div style="padding: 24px 30px; background: var(--slate-50); border-top: 1px solid var(--slate-200);">
+            <a href="tel:03437769660" style="display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--slate-900); font-weight: 900; font-size: 1.1rem;"><i class="fas fa-phone text-emerald-600"></i> 0343 7769660</a>
+            <p style="font-size: 9px; font-weight: 800; color: var(--slate-500); text-transform: uppercase; letter-spacing: 1px; margin-top: 8px;">Proprietor: Muhammad Pervaiz</p>
+        </div>
+    </aside>
+
+    <!-- PERFECTED HEADER (MentR Layout + New Pure CSS Logo) -->
+    <header>
+        <div class="container header-inner">
+            
+            <!-- Left Side: Logo & Text -->
+            <div class="brand-section" onclick="showPage('home')">
+                
+                <!-- NEW PURE CSS LOGO -->
+                <div class="brand-logo-custom">
+                    <span class="t-letter">T</span>
+                    <div class="heart-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                </div>
+                
+                <div class="brand-text">
+                    <h1>TAJ</h1>
+                    <p>MEDICAL AND GENERAL STORE</p>
+                </div>
+            </div>
+
+            <!-- Right Side: MentR Style Actions (WhatsApp + 3 Dots Menu) -->
+            <div class="header-actions">
+                <a href="https://wa.me/923437769660" class="action-btn btn-wa" title="WhatsApp Us">
+                    <i class="fab fa-whatsapp"></i>
+                    <!-- Red dot badge -->
+                   
+                </a>
+                
+                <button class="action-btn btn-menu" onclick="toggleSidebar()" title="Menu">
+                    <i class="fas fa-ellipsis-v"></i>
+                </button>
+            </div>
+            
+        </div>
+    </header>
+
+    <!-- MAIN DASHBOARD (Home) -->
+    <main id="page-home" class="view-page active">
+        
+        <!-- Hero -->
+        <section class="container hero-section">
+            <div style="display: inline-block; padding: 8px 24px; background: var(--emerald-50); border: 1px solid var(--emerald-200); color: var(--emerald-700); border-radius: 99px; font-size: 10px; font-weight: 900; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 24px;">Chak 99 GB Nehang's Premier Hub</div>
+            <h2 class="hero-title">Your Health is <br><span style="color: var(--emerald-600);">Our Sole Mission.</span></h2>
+            <p class="hero-desc">Providing 100% genuine medical supplies, baby care, surgical items, and general groceries under the expert supervision of Muhammad Pervaiz.</p>
+            <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
+                <button onclick="scrollToSection('contact')" class="btn btn-dark"><i class="fas fa-phone-volume"></i> Connect Now</button>
+                <button onclick="scrollToSection('categories')" class="btn btn-outline"><i class="fas fa-box-open"></i> Browse Stock</button>
+            </div>
+        </section>
+
+        <!-- Vast About Us -->
+        <section id="about" class="vast-about">
+            <div class="vast-bg"></div>
+            <div class="vast-overlay"></div>
+            <div class="container">
+                <div class="about-content">
+                    <div>
+                        <span style="color: var(--emerald-400); font-weight: 900; font-size: 12px; text-transform: uppercase; letter-spacing: 3px; display: block; margin-bottom: 16px;">Vast About Us</span>
+                        <h2 style="font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 900; line-height: 1.1; margin-bottom: 24px; letter-spacing: -1px;">A Legacy of Care & <br><span style="color: var(--emerald-500);">Community Trust.</span></h2>
+                        <p style="font-size: 1.1rem; line-height: 1.8; color: var(--slate-300); font-weight: 500; margin-bottom: 24px;">Taj Medical & General Store was established with a singular vision: to bridge the gap between quality healthcare and the residents of Chak 99 GB Nehang, Jaranwala. For years, we have stood as a beacon of reliability.</p>
+                        <p style="font-size: 1.1rem; line-height: 1.8; color: var(--slate-300); font-weight: 500;">We are not merely a dispensary; we are a comprehensive health hub. From maintaining a rigorous cold chain for life-saving vaccines to ensuring that every shelf in our general store holds premium, unadulterated products, our commitment is unwavering.</p>
+                    </div>
+                    <div class="proprietor-box">
+                        <i class="fas fa-quote-left" style="font-size: 3rem; color: var(--emerald-500); margin-bottom: 24px; opacity: 0.5;"></i>
+                        <h3 style="font-size: 1.5rem; font-weight: 900; margin-bottom: 16px;">Proprietor's Guarantee (Aitmad)</h3>
+                        <p style="font-size: 1.1rem; font-style: italic; line-height: 1.7; font-weight: 500; margin-bottom: 32px;">"Main, Muhammad Pervaiz, apni awam ko is baat ki mukammal zamamat deta hoon ke Taj Medical par aane wali har dawai direct company authorized distributors se aati hai. Humara sarmaya aapka aitmad hai, aur sehat par koi samjhota nahi kiya jayega."</p>
+                        <div style="display: flex; align-items: center; gap: 16px;">
+                            <div style="width: 50px; height: 50px; background: var(--emerald-600); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: 20px;">M</div>
+                            <div>
+                                <div style="font-weight: 900; font-size: 1rem;">Muhammad Pervaiz</div>
+                                <div style="font-size: 10px; color: var(--emerald-400); font-weight: 800; text-transform: uppercase; letter-spacing: 1px;">Store Proprietor</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ethics -->
+        <section id="ethics" class="container" style="padding-top: 80px;">
+            <div class="text-center">
+                <h2 class="section-title">Our Strict Ethics</h2>
+                <span class="section-subtitle">Non-Negotiable Standards at Taj Medical</span>
+            </div>
+            <div class="ethics-grid">
+                <div class="ethic-card ethic-red">
+                    <i class="fas fa-biohazard"></i>
+                    <h4>Narcotics Policy</h4>
+                    <p>As per the Drug Regulatory Authority, no narcotics, sedatives, or controlled substances will be sold without an original prescription and CNIC. Zero exceptions made.</p>
+                </div>
+                <div class="ethic-card ethic-yellow">
+                    <i class="fas fa-hand-holding-heart"></i>
+                    <h4>No Self-Medication</h4>
+                    <p>We strongly discourage self-medication. Our team provides honest guidance and will never upsell unnecessary medicines just for profit. Your safety is first.</p>
+                </div>
+                <div class="ethic-card ethic-blue">
+                    <i class="fas fa-microscope"></i>
+                    <h4>100% Verified Quality</h4>
+                    <p>Every batch of medicine is procured directly from licensed pharmaceutical distributors. Expiry dates are strictly monitored, and cold chain integrity is maintained 24/7.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Qualities -->
+        <section id="qualities" class="container">
+            <div class="text-center">
+                <h2 class="section-title">Why Choose Us?</h2>
+                <span class="section-subtitle">The Pillars of Our Service</span>
+            </div>
+            <div class="card-grid">
+                <div class="glass-box">
+                    <div class="icon-wrap"><i class="fas fa-snowflake"></i></div>
+                    <h4 style="font-size: 1.25rem; font-weight: 900; margin-bottom: 12px;">Cold Chain Protection</h4>
+                    <p style="color: var(--slate-500); font-weight: 500;">Heavy-duty UPS backup ensures that Insulin and critical vaccines remain at optimal temperatures during power outages.</p>
+                </div>
+                <div class="glass-box">
+                    <div class="icon-wrap" style="background: var(--amber-50); color: var(--amber-600);"><i class="fas fa-file-invoice-dollar"></i></div>
+                    <h4 style="font-size: 1.25rem; font-weight: 900; margin-bottom: 12px;">Government Fixed Rates</h4>
+                    <p style="color: var(--slate-500); font-weight: 500;">We adhere strictly to the retail prices set by the government. Honest pricing is our commitment to the community.</p>
+                </div>
+                <div class="glass-box">
+                    <div class="icon-wrap" style="background: var(--blue-50); color: var(--blue-600);"><i class="fas fa-clock"></i></div>
+                    <h4 style="font-size: 1.25rem; font-weight: 900; margin-bottom: 12px;">Punctual Timings</h4>
+                    <p style="color: var(--slate-500); font-weight: 500;">We strictly operate between 06:00 AM - 03:00 PM and 07:00 PM - 10:00 PM to maintain discipline and service quality.</p>
+                </div>
+                <div class="glass-box">
+                    <div class="icon-wrap" style="background: var(--rose-50); color: var(--rose-600);"><i class="fas fa-user-check"></i></div>
+                    <h4 style="font-size: 1.25rem; font-weight: 900; margin-bottom: 12px;">Expert Consultation</h4>
+                    <p style="color: var(--slate-500); font-weight: 500;">M. Pervaiz provides personalized attention, ensuring you understand the dosage, timings, and usage of your prescriptions.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services -->
+        <section id="services" class="container">
+            <div class="text-center">
+                <h2 class="section-title">Our Services</h2>
+                <span class="section-subtitle">Comprehensive Healthcare Solutions</span>
+            </div>
+            <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));">
+                <div class="glass-box" style="display: flex; gap: 24px; align-items: flex-start;">
+                    <i class="fas fa-prescription-bottle-medical" style="font-size: 2.5rem; color: var(--emerald-500);"></i>
+                    <div>
+                        <h4 style="font-size: 1.2rem; font-weight: 900; margin-bottom: 8px;">Prescription Dispensing</h4>
+                        <p style="color: var(--slate-500); font-size: 0.9rem; font-weight: 500;">Accurate and fast dispensing of authorized medical prescriptions.</p>
+                    </div>
+                </div>
+                <div class="glass-box" style="display: flex; gap: 24px; align-items: flex-start;">
+                    <i class="fas fa-truck-medical" style="font-size: 2.5rem; color: var(--blue-500);"></i>
+                    <div>
+                        <h4 style="font-size: 1.2rem; font-weight: 900; margin-bottom: 8px;">Urgent Procurement</h4>
+                        <p style="color: var(--slate-500); font-size: 0.9rem; font-weight: 500;">If a specific medicine is unavailable, we arrange it rapidly from Jaranwala/Faisalabad.</p>
+                    </div>
+                </div>
+                <div class="glass-box" style="display: flex; gap: 24px; align-items: flex-start;">
+                    <i class="fas fa-heart-pulse" style="font-size: 2.5rem; color: var(--rose-500);"></i>
+                    <div>
+                        <h4 style="font-size: 1.2rem; font-weight: 900; margin-bottom: 8px;">First Aid & Basic Care</h4>
+                        <p style="color: var(--slate-500); font-size: 0.9rem; font-weight: 500;">Providing immediate necessary supplies for first aid and emergency situations.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Categories -->
+        <section id="categories" class="container">
+            <div class="text-center">
+                <h2 class="section-title">Stock Categories</h2>
+                <span class="section-subtitle">Explore Our Wide Inventory</span>
+            </div>
+            <div class="cat-grid">
+                <div class="cat-card">
+                    <div class="cat-bg" style="background-image: url('https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?q=80&w=600');"></div>
+                    <div class="cat-overlay"><span class="cat-title">Pharmacy & Meds</span></div>
+                </div>
+                <div class="cat-card">
+                    <div class="cat-bg" style="background-image: url('https://images.unsplash.com/photo-1555252333-9f8e92e65ee9?q=80&w=600');"></div>
+                    <div class="cat-overlay"><span class="cat-title">Baby Care & Feed</span></div>
+                </div>
+                <div class="cat-card">
+                    <div class="cat-bg" style="background-image: url('https://images.unsplash.com/photo-1556228578-0d85b1a4d571?q=80&w=600');"></div>
+                    <div class="cat-overlay"><span class="cat-title">Skin & Cosmetics</span></div>
+                </div>
+                <div class="cat-card">
+                    <div class="cat-bg" style="background-image: url('https://images.unsplash.com/photo-1516549655169-df83a0774514?q=80&w=600');"></div>
+                    <div class="cat-overlay"><span class="cat-title">Surgical Items</span></div>
+                </div>
+                <div class="cat-card">
+                    <div class="cat-bg" style="background-image: url('https://images.unsplash.com/photo-1628771065518-0d82f1938462?q=80&w=600');"></div>
+                    <div class="cat-overlay"><span class="cat-title">Vitamins & Syrups</span></div>
+                </div>
+                <div class="cat-card">
+                    <div class="cat-bg" style="background-image: url('https://images.unsplash.com/photo-1583258292688-d0213dc5a3a8?q=80&w=600');"></div>
+                    <div class="cat-overlay"><span class="cat-title">General Groceries</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq" class="container" style="margin-bottom: 80px;">
+            <div class="text-center">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <span class="section-subtitle">Common Queries Answered</span>
+            </div>
+            <div style="max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 16px;">
+                <div class="glass-box" style="padding: 30px;">
+                    <h4 style="font-size: 1.1rem; font-weight: 900; margin-bottom: 12px; display: flex; justify-content: space-between;">Kya Home Delivery available hai? <i class="fas fa-ban text-rose-500"></i></h4>
+                    <p style="color: var(--slate-500); font-weight: 500;">Nahi. Qanooni aur hifazati wajohat ki bina par hum home delivery provide nahi karte. Customers ko store par khud aana lazmi hai.</p>
+                </div>
+                <div class="glass-box" style="padding: 30px;">
+                    <h4 style="font-size: 1.1rem; font-weight: 900; margin-bottom: 12px; display: flex; justify-content: space-between;">Store ki return policy kya hai? <i class="fas fa-undo text-emerald-500"></i></h4>
+                    <p style="color: var(--slate-500); font-weight: 500;">Fridge mein rakhne wali dawai (Insulin etc.) aur seal-broken items wapis nahi hote. Baqi dawai receipt ke sath 3 din mein return ki ja sakti hai.</p>
+                </div>
+                <div class="glass-box" style="padding: 30px;">
+                    <h4 style="font-size: 1.1rem; font-weight: 900; margin-bottom: 12px; display: flex; justify-content: space-between;">Kya wholesale rates par dawai milti hai? <i class="fas fa-tags text-blue-500"></i></h4>
+                    <p style="color: var(--slate-500); font-weight: 500;">Hum retail pharmacy hain, is liye government fixed retail rates apply hote hain. Albatta community support ke tehat munasib discount diya jata hai.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact & Map -->
+        <section id="contact" class="container">
+            <div class="text-center">
+                <h2 class="section-title">Contact Support</h2>
+                <span class="section-subtitle">Click to connect with us directly</span>
+            </div>
+            
+            <div class="contact-hub">
+                <a href="tel:03437769660" class="contact-action">
+                    <div class="c-icon" style="background: var(--emerald-50); color: var(--emerald-600);"><i class="fas fa-phone-volume"></i></div>
+                    <div>
+                        <p style="font-size: 10px; font-weight: 900; color: var(--slate-400); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 4px;">Primary Line</p>
+                        <h4 style="font-size: 1.4rem; font-weight: 900; color: var(--slate-900);">0343 7769660</h4>
+                    </div>
+                </a>
+                <a href="tel:03167328419" class="contact-action">
+                    <div class="c-icon" style="background: var(--blue-50); color: var(--blue-600);"><i class="fas fa-mobile-screen"></i></div>
+                    <div>
+                        <p style="font-size: 10px; font-weight: 900; color: var(--slate-400); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 4px;">Secondary Line</p>
+                        <h4 style="font-size: 1.4rem; font-weight: 900; color: var(--slate-900);">0316 7328419</h4>
+                    </div>
+                </a>
+                <a href="mailto:tajmedicalstore99@gmail.com" class="contact-action">
+                    <div class="c-icon" style="background: var(--rose-50); color: var(--rose-600);"><i class="fas fa-envelope-open-text"></i></div>
+                    <div>
+                        <p style="font-size: 10px; font-weight: 900; color: var(--slate-400); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 4px;">Official Email</p>
+                        <h4 style="font-size: 1.1rem; font-weight: 900; color: var(--slate-900); word-break: break-all;">tajmedicalstore99<br>@gmail.com</h4>
+                    </div>
+                </a>
+            </div>
+
+                        <!-- Map -->
+<div class="map-container-fluid">
+    <div class="map-frame">
+        <iframe 
+            width="100%" 
+            height="100%" 
+            frameborder="0" 
+            style="border:0;" 
+            src="https://www.google.com/maps?q=TAJ+MEDICAL+AND+GENERAL+STORE+99+GB+Nehang+Badala&output=embed"
+            allowfullscreen>
+        </iframe>
+
+        <a href="https://www.google.com/maps?q=Taj+Medical+&+General+Store+99+GB+Nehang+Jaranwala" 
+           target="_blank" 
+           class="location-card">
+            <div class="icon-circle">
+                <i class="fas fa-location-dot"></i>
+            </div>
+            <div class="text-info">
+                <h4>Taj Medical & General Store</h4>
+                <p>99 GB Nehang, Badala Road, Jaranwala</p>
+            </div>
+        </a>
+    </div>
+</div>
+
+<style>
+/* --- Main Container --- */
+.map-container-fluid {
+    width: 100%;
+    padding: 10px; /* Thora gap edges se */
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+/* --- Optimized Map Frame (Wide View) --- */
+.map-frame {
+    position: relative;
+    width: 100%; 
+    max-width: 1000px; /* Screen par fit rehne ke liye limit */
+    height: 450px;     /* Height kam kar di (Width zyada feel hogi) */
+    overflow: hidden;
+    background: #f1f5f9;
+    
+    /* --- Clean Cool Border --- */
+    border: 5px solid #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* --- Right Aligned Sidebar Card --- */
+.location-card {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: rgba(255, 255, 255, 0.96);
+    backdrop-filter: blur(5px);
+    padding: 10px 18px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    z-index: 10;
+    text-decoration: none;
+    color: #333;
+    border: 1px solid #f1f5f9;
+}
+
+.icon-circle {
+    background: #e11d48;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.text-info h4 { margin: 0; font-size: 0.85rem; font-weight: 800; }
+.text-info p { margin: 0; font-size: 0.7rem; color: #666; }
+
+/* --- Mobile Fix --- */
+@media (max-width: 768px) {
+    .map-frame { 
+        height: 350px; /* Mobile par aur bhi compact */
+    }
+    .location-card {
+        top: 10px;
+        right: 10px;
+        left: 10px; /* Mobile par full width card */
+    }
+}
+</style>
+            
+    
+        </section>
+    </main>
+
+    <!-- PAGE: REVIEWS -->
+    <main id="page-reviews" class="view-page">
+        <div class="container" style="max-width: 900px;">
+            <button onclick="showPage('home')" style="background: none; border: none; color: var(--emerald-600); font-weight: 900; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 2px; cursor: pointer; margin-bottom: 40px; display: inline-flex; align-items: center; gap: 10px;">
+                <i class="fas fa-arrow-left"></i> Back to Dashboard
+            </button>
+            
+            <div class="text-center mb-16">
+                <h2 class="section-title">Review Portal</h2>
+                <span class="section-subtitle">Share your experience with the community</span>
+            </div>
+
+            <div class="glass-card" style="padding: 50px; margin-bottom: 60px;">
+                <h3 style="font-size: 1.8rem; font-weight: 900; margin-bottom: 40px; color: var(--slate-900);">Submit Your Feedback</h3>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 24px;">
+                    <div class="form-group">
+                        <label class="form-label">Full Name</label>
+                        <input type="text" id="revName" class="form-input" placeholder="e.g. Ali Hamza">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Rate Service</label>
+                        <div class="star-rating" id="starForm">
+                            <i class="fas fa-star" onclick="setRating(1)"></i>
+                            <i class="fas fa-star" onclick="setRating(2)"></i>
+                            <i class="fas fa-star" onclick="setRating(3)"></i>
+                            <i class="fas fa-star" onclick="setRating(4)"></i>
+                            <i class="fas fa-star" onclick="setRating(5)"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group" style="margin-bottom: 32px;">
+                    <label class="form-label">Your Message</label>
+                    <textarea id="revText" class="form-input" rows="5" placeholder="Taj Medical ke baray mein apni raye likhein..."></textarea>
+                </div>
+
+                <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+                    <button onclick="postReview()" class="btn btn-dark" style="flex: 1;"><i class="fas fa-paper-plane"></i> Post on Wall</button>
+                    <button onclick="sendWhatsApp()" class="btn btn-whatsapp" style="flex: 1; border:none; background:#25D366; color:white;"><i class="fab fa-whatsapp" style="font-size: 1.2rem;"></i> Send via WhatsApp</button>
+                </div>
+            </div>
+
+            <div style="border-top: 1px solid var(--slate-200); padding-top: 60px;">
+                <h3 style="font-size: 2rem; font-weight: 900; margin-bottom: 40px; text-align: center;">Public Feedback Wall</h3>
+                <div id="reviewWall" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px;">
+                    <div class="glass-card" style="padding: 32px;">
+                        <div style="color: var(--amber-500); font-size: 1.2rem; margin-bottom: 16px;">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p style="font-size: 1.1rem; font-weight: 600; font-style: italic; color: var(--slate-700); margin-bottom: 24px; line-height: 1.7;">"Quality aur price dono behtreen hain. Muhammad Pervaiz sahab ka rawaiya bohot acha hai aur dawai hamesha asli milti hai."</p>
+                        <div style="display: flex; align-items: center; gap: 16px;">
+                            <div style="width: 45px; height: 45px; border-radius: 50%; background: var(--emerald-100); color: var(--emerald-700); display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: 16px;">M</div>
+                            <div>
+                                <div style="font-weight: 900; font-size: 14px; color: var(--slate-900);">Munir Ahmed</div>
+                                <div style="font-size: 10px; font-weight: 800; color: var(--slate-400); text-transform: uppercase; letter-spacing: 1px;">Verified Customer</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Mega Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col" style="text-align: left;">
+                    <h3 style="font-size: 2rem; font-weight: 900; letter-spacing: -1px; margin-bottom: 8px;">TAJ MEDICAL</h3>
+                    <p style="font-size: 10px; font-weight: 800; color: var(--slate-400); letter-spacing: 3px; text-transform: uppercase; margin-bottom: 24px;">99 GB Nehang Hub</p>
+                    <p style="color: var(--slate-400); font-weight: 500; font-size: 0.9rem; line-height: 1.8; margin-bottom: 24px;">Setting the standard for quality healthcare, genuine medicines, and community service in Jaranwala.</p>
+                    <div class="social-links">
+                        <a href="https://facebook.com/m.parvaiz.10690" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com/m.pervaiz.99" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/923437769660" class="social-icon whatsapp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>                
+                <div class="footer-col" style="text-align: left;">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><button onclick="showPage('home')">Home Dashboard</button></li>
+                        <li><button onclick="scrollToSection('about')">About Proprietor</button></li>
+                        <li><button onclick="scrollToSection('ethics')">Our Ethics</button></li>
+                        <li><button onclick="scrollToSection('qualities')">Why Choose Us</button></li>
+                        <li><button onclick="scrollToSection('services')">Our Services</button></li>
+                        <li><button onclick="showPage('reviews')">Review Portal</button></li>
+                    </ul>
+                </div>
+                <div class="footer-col" style="text-align: left;">
+                    <h4>Contact & Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="tel:03437769660"><i class="fas fa-phone text-emerald-500 mr-2"></i> 0343 7769660 (Primary)</a></li>
+                        <li><a href="tel:03167328419"><i class="fas fa-mobile-screen text-blue-500 mr-2"></i> 0316 7328419 (Secondary)</a></li>
+                        <li><a href="mailto:tajmedicalstore99@gmail.com"><i class="fas fa-envelope text-rose-500 mr-2"></i> tajmedicalstore99@gmail.com</a></li>
+                        <li style="color: var(--slate-400); font-weight: 600; font-size: 0.95rem; margin-top: 16px;"><i class="fas fa-location-dot text-emerald-500 mr-2"></i> Chak 99 GB Nehang, Badala, Jaranwala.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 40px; text-align: center;">
+                <div class="strict-notice" style="color:#ef4444; font-weight:bold; margin-bottom:15px;">
+                    <i class="fas fa-ban" style="margin-right: 8px;"></i> Strict Legal Policy: No Home Delivery • Physical Presence is Mandatory for Purchase
+                </div>
+                <p style="font-size: 10px; font-weight: 800; color: var(--slate-500); text-transform: uppercase; letter-spacing: 2px; line-height: 2;">
+                    &copy; 2024 Taj Medical & General Store. All Rights Reserved.<br>
+                    Licensed by Health Department Punjab • Proprietor: Muhammad Pervaiz
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTop" class="back-to-top" onclick="window.scrollTo({top:0, behavior:'smooth'})">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // Sidebar Control
+        function toggleSidebar() {
+            const sb = document.getElementById('sidebar');
+            const ol = document.getElementById('sidebarOverlay');
+            sb.classList.toggle('active');
+            ol.classList.toggle('active');
+        }
+
+        // Smooth Section Scrolling
+        function scrollToSection(id) {
+            showPage('home');
+            setTimeout(() => {
+                const element = document.getElementById(id);
+                if(element) element.scrollIntoView({behavior: 'smooth'});
+            }, 100);
+        }
+
+        // View Switcher (SPA Logic)
+        function showPage(pageId) {
+            document.querySelectorAll('.view-page').forEach(p => p.classList.remove('active'));
+            document.querySelectorAll('.sb-link').forEach(l => l.classList.remove('active'));
+            
+            document.getElementById('page-' + pageId).classList.add('active');
+            document.getElementById('nav-' + pageId).classList.add('active');
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        }
+
+        // Review System
+        let rating = 0;
+        function setRating(val) {
+            rating = val;
+            const stars = document.getElementById('starForm').children;
+            for(let i=0; i<5; i++) {
+                if(i < val) stars[i].classList.add('active');
+                else stars[i].classList.remove('active');
+            }
+        }
+
+        function postReview() {
+            const name = document.getElementById('revName').value || 'Guest User';
+            const text = document.getElementById('revText').value;
+            if(!text || rating === 0) return alert("Please select a rating and write a message!");
+
+            const wall = document.getElementById('reviewWall');
+            const card = document.createElement('div');
+            card.className = 'glass-card';
+            card.style.padding = '32px';
+            
+            let s = '';
+            for(let i=0; i<5; i++) s += `<i class="fas fa-star" style="color: ${i < rating ? 'var(--amber-500)' : 'var(--slate-200)'}"></i> `;
+
+            card.innerHTML = `
+                <div style="font-size: 1.2rem; margin-bottom: 16px;">${s}</div>
+                <p style="font-size: 1.1rem; font-weight: 600; font-style: italic; color: var(--slate-700); margin-bottom: 24px; line-height: 1.7;">"${text}"</p>
+                <div style="display: flex; align-items: center; gap: 16px;">
+                    <div style="width: 45px; height: 45px; border-radius: 50%; background: var(--emerald-100); color: var(--emerald-700); display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: 16px;">${name.charAt(0).toUpperCase()}</div>
+                    <div>
+                        <div style="font-weight: 900; font-size: 14px; color: var(--slate-900);">${name}</div>
+                        <div style="font-size: 10px; font-weight: 800; color: var(--slate-400); text-transform: uppercase; letter-spacing: 1px;">Public Review</div>
+                    </div>
+                </div>
+            `;
+            wall.prepend(card);
+            alert("Review successfully posted to the Wall!");
+            document.getElementById('revText').value = '';
+            document.getElementById('revName').value = '';
+            setRating(0);
+        }
+
+        function sendWhatsApp() {
+            const name = document.getElementById('revName').value || 'Customer';
+            const text = document.getElementById('revText').value;
+            if(!text || rating === 0) return alert("Please complete the review first!");
+            
+            const msg = `*Taj Medical Store - Review*\n\n*Name:* ${name}\n*Rating:* ${"⭐".repeat(rating)}\n*Message:* ${text}`;
+            window.open(`https://wa.me/923437769660?text=${encodeURIComponent(msg)}`, '_blank');
+        }
+
+        // Back to top Logic
+        window.onscroll = function() {
+            const btt = document.getElementById('backToTop');
+            if (document.documentElement.scrollTop > 500) btt.classList.add('show');
+            else btt.classList.remove('show');
+        };
+    </script>
+</body>
+</html>
