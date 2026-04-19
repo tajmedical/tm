@@ -141,15 +141,34 @@ body {
           Bismillah
            ========================================================= */
         
- .bismillah-header {
-            text-align: center;
-            font-family: 'Amiri', serif; /* بہتر عربی فونٹ کے لیے */
-            font-size: 2em; /* سائز بڑا کرنے کے لیے */
-            padding: 20px;
-            color: #333;
-            border-bottom: 2px solid #eee;
-        }
-        
+/* Bismillah Premium Header */
+.bismillah-container {
+    background: #0f172a; /* Deep dark background */
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 2px solid #b59410; /* Gold border line */
+}
+
+.bismillah-text {
+    font-family: 'Noto Naskh Arabic', serif;
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin: 0;
+    /* This creates the gold metallic look from the image */
+    background: linear-gradient(to bottom, #fde047 0%, #b59410 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0px 2px 4px rgba(0,0,0,0.3));
+}
+
+@media (max-width: 640px) {
+    .bismillah-text {
+        font-size: 1.8rem;
+        padding: 0 15px;
+    }
+}
+
         /* Brand Text */
         .brand-text { display: flex; flex-direction: column; justify-content: center; margin-top: 3px; }
         .brand-text h1 { 
@@ -329,11 +348,6 @@ body {
     </style>
 </head>
 <body>
-<div style="background-color: #f8fafc; text-align: center; padding: 10px 0; border-bottom: 1px solid #e2e8f0; font-family: 'Amiri', serif;">
-    <span style="font-size: 1.5rem; color: #1e293b; font-weight: bold; direction: rtl; unicode-bidi: embed;">
-        بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِیْمِ
-    </span>
-</div>
 
     <!-- Urgent Notice Marquee -->
     <div class="marquee-bar">
@@ -405,10 +419,16 @@ body {
                     <i class="fas fa-ellipsis-v"></i>
                 </button>
             </div>
-            
-        </div>
+        
     </header>
 
+<header class="bismillah-container">
+    <div class="bismillah-inner">
+        <h1 class="bismillah-text" dir="rtl">بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِیْمِ</h1>
+    </div>
+</header>
+
+    
     <!-- MAIN DASHBOARD (Home) -->
     <main id="page-home" class="view-page active">
         
