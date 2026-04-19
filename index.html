@@ -141,35 +141,34 @@ body {
           Bismillah
            ========================================================= */
         
-.bismillah-top-bar {
+@import url('https://googleapis.com');
+
+/* 1. Sticky Container */
+.frozen-top-container {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     width: 100%;
-    background: #0f172a; /* Dark background to match the image */
-    padding: 8px 0;
-    text-align: center;
-    border-bottom: 1px solid #b59410; /* Elegant gold divider */
-    line-height: 1;
+    background: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
-.bismillah-text {
+/* 2. Bismillah & Ayat Styling */
+.bismillah-bar { background: #0f172a; padding: 6px 0; text-align: center; }
+.bismillah-gold-text {
     font-family: 'Noto Naskh Arabic', serif;
-    font-size: 1.4rem; /* Balanced size */
-    font-weight: 600;
-    /* Gold Gradient from your image */
+    font-size: 1.2rem;
+    font-weight: 700;
     background: linear-gradient(180deg, #fde047 0%, #b59410 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    display: inline-block;
 }
 
-/* Mobile optimization */
-@media (max-width: 480px) {
-    .bismillah-text {
-        font-size: 1.1rem;
-    }
-    .bismillah-top-bar {
-        padding: 6px 0;
-    }
-}
+.ayat-section { background: #f8fafc; padding: 10px; border-bottom: 1px solid #e2e8f0; text-align: center; }
+.ayat-wrapper { display: flex; flex-direction: column; gap: 4px; }
+.arabic-text { font-family: 'Noto Naskh Arabic', serif; color: #059669; font-size: 1rem; font-weight: 700; }
+.translation-text { font-family: 'Noto Naskh Arabic', serif; color: #64748b; font-size: 0.8rem; font-weight: 500; }
+
 
 
         /* Brand Text */
@@ -353,53 +352,78 @@ body {
 <body>
 
     <!-- Bismillah: Placed at the very top to prevent shifting other elements -->
-<div class="bismillah-top-bar">
-    <div dir="rtl" class="bismillah-text">بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِیْمِ</div>
-</div>
+<!-- STICKY TOP SECTION -->
+<div class="frozen-top-container">
+    <!-- Bismillah Bar -->
+    <div class="bismillah-bar">
+        <div dir="rtl" class="bismillah-gold-text">بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِیْمِ</div>
+    </div>
 
-<!-- The rest of your code follows below -->
-<!-- Urgent Notice Marquee -->
-<div class="marquee-bar">...</div>
-
+    <!-- Ayat & Translation Bar -->
+    <div class="ayat-section">
+        <div class="ayat-wrapper">
+            <span class="arabic-text" dir="rtl">وَ مَنْ اَحْیَاهَا فَكَاَنَّمَاۤ اَحْیَا النَّاسَ جَمِیْعًاؕ</span>
+            <span class="translation-text" dir="rtl">"اور جس نے کسی انسان کی جان بچائی تو گویا اس نے تمام انسانوں کی جان بچائی۔"</span>
+        </div>
+    </div>
 
     <!-- Urgent Notice Marquee -->
     <div class="marquee-bar">
         <div class="marquee-content uppercase">
             <span><i class="fas fa-ban" style="color: #fde047; margin-right:8px;"></i> ZERO HOME DELIVERY: Customers must visit the store physically.</span>
             <span><i class="fas fa-id-card" style="color: #93c5fd; margin-right:8px;"></i> CNIC & Original Prescription Required for Narcotics & Controlled Drugs.</span>
-            <span><i class="fas fa-shield-check" style="color: #6ee7b7; margin-right:8px;"></i> 100% Genuine Medicine Guarantee by Proprietor Muhammad Pervaiz.</span>
-            <span><i class="fas fa-clock" style="margin-right:8px;"></i> Operating Hours: 06:00 AM - 03:00 PM | 07:00 PM - 10:00 PM.</span>
         </div>
     </div>
 
-    <!-- Sidebar & Overlay -->
-    <div id="sidebarOverlay" class="sidebar-overlay" onclick="toggleSidebar()"></div>
-    <aside id="sidebar" class="sidebar">
-        <div class="sb-header">
-            <div>
-                <h2 style="font-weight: 900; color: var(--taj-blue); font-size: 1.5rem; line-height: 1; font-family: 'Montserrat', sans-serif;">TAJ HUB</h2>
-                <p style="font-size: 9px; font-weight: 900; color: var(--slate-400); letter-spacing: 2px; text-transform: uppercase; margin-top: 4px;">Main Menu</p>
+    <!-- Main Branding Header -->
+    <header class="main-header">
+        <div class="header-inner">
+            <div class="brand-side" onclick="showPage('home')">
+                <div class="brand-logo-custom">
+                    <span class="t-letter">T</span>
+                    <div class="heart-icon"><i class="fas fa-heart"></i></div>
+                </div>
+                <div class="brand-text">
+                    <h1>TAJ</h1>
+                    <p>MEDICAL AND GENERAL STORE</p>
+                </div>
             </div>
-            <!-- Sidebar close button -->
-            <button class="action-btn" onclick="toggleSidebar()"><i class="fas fa-times"></i></button>
+            <div class="action-side">
+                <a href="https://wa.me" class="wa-btn"><i class="fab fa-whatsapp"></i></a>
+                <button class="menu-btn" onclick="toggleSidebar()"><i class="fas fa-ellipsis-v"></i></button>
+            </div>
         </div>
-        <div class="sb-menu">
-            <button onclick="showPage('home')" class="sb-link active" id="nav-home"><i class="fas fa-house"></i> Home Dashboard</button>
-            <button onclick="scrollToSection('about')" class="sb-link"><i class="fas fa-user-tie"></i> Vast About Us</button>
-            <button onclick="scrollToSection('ethics')" class="sb-link"><i class="fas fa-balance-scale"></i> Our Ethics</button>
-            <button onclick="scrollToSection('services')" class="sb-link"><i class="fas fa-hand-holding-medical"></i> Our Services</button>
-            <button onclick="scrollToSection('categories')" class="sb-link"><i class="fas fa-layer-group"></i> Categories</button>
-            <button onclick="scrollToSection('faq')" class="sb-link"><i class="fas fa-circle-question"></i> FAQ</button>
-            <button onclick="showPage('reviews')" class="sb-link" id="nav-reviews"><i class="fas fa-star"></i> Review Portal</button>
-            <button onclick="scrollToSection('contact')" class="sb-link"><i class="fas fa-map-location-dot"></i> Contact & Map</button>
-        </div>
-        <div style="padding: 24px 30px; background: var(--slate-50); border-top: 1px solid var(--slate-200);">
-            <a href="tel:03437769660" style="display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--slate-900); font-weight: 900; font-size: 1.1rem;"><i class="fas fa-phone text-emerald-600"></i> 0343 7769660</a>
-            <p style="font-size: 9px; font-weight: 800; color: var(--slate-500); text-transform: uppercase; letter-spacing: 1px; margin-top: 8px;">Proprietor: Muhammad Pervaiz</p>
-        </div>
-    </aside>
+    </header>
+</div>
 
-    <!-- PERFECTED HEADER (MentR Layout + New Pure CSS Logo) -->
+<!-- SIDEBAR & OVERLAY -->
+<div id="sidebarOverlay" class="sidebar-overlay" onclick="toggleSidebar()"></div>
+<aside id="sidebar" class="sidebar">
+    <div class="sb-header">
+        <div class="sb-brand">
+            <h2>TAJ HUB</h2>
+            <p>MAIN MENU</p>
+        </div>
+        <button class="close-sb" onclick="toggleSidebar()"><i class="fas fa-times"></i></button>
+    </div>
+    
+    <nav class="sb-menu">
+        <button onclick="showPage('home')" class="sb-link active"><i class="fas fa-house"></i> Home Dashboard</button>
+        <button onclick="scrollToSection('about')" class="sb-link"><i class="fas fa-user-tie"></i> Vast About Us</button>
+        <button onclick="scrollToSection('ethics')" class="sb-link"><i class="fas fa-balance-scale"></i> Our Ethics</button>
+        <button onclick="scrollToSection('services')" class="sb-link"><i class="fas fa-hand-holding-medical"></i> Our Services</button>
+        <button onclick="scrollToSection('categories')" class="sb-link"><i class="fas fa-layer-group"></i> Categories</button>
+        <button onclick="scrollToSection('faq')" class="sb-link"><i class="fas fa-circle-question"></i> FAQ</button>
+        <button onclick="showPage('reviews')" class="sb-link"><i class="fas fa-star"></i> Review Portal</button>
+        <button onclick="scrollToSection('contact')" class="sb-link"><i class="fas fa-map-location-dot"></i> Contact & Map</button>
+    </nav>
+
+    <div class="sb-footer">
+        <a href="tel:03437769660" class="footer-phone"><i class="fas fa-phone"></i> 0343 7769660</a>
+        <p class="proprietor-tag">Proprietor: Muhammad Pervaiz</p>
+    </div>
+</aside>
+ <!-- PERFECTED HEADER (MentR Layout + New Pure CSS Logo) -->
     <header>
         <div class="container header-inner">
             
@@ -432,9 +456,8 @@ body {
                     <i class="fas fa-ellipsis-v"></i>
                 </button>
             </div>
-        
+        </div>
     </header>
-
     <!-- MAIN DASHBOARD (Home) -->
     <main id="page-home" class="view-page active">
         
