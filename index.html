@@ -141,33 +141,36 @@ body {
           Bismillah
            ========================================================= */
         
-/* Bismillah Premium Header */
-.bismillah-container {
-    background: #0f172a; /* Deep dark background */
-    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
-    padding: 20px 0;
+.bismillah-top-bar {
+    width: 100%;
+    background: #0f172a; /* Dark background to match the image */
+    padding: 8px 0;
     text-align: center;
-    border-bottom: 2px solid #b59410; /* Gold border line */
+    border-bottom: 1px solid #b59410; /* Elegant gold divider */
+    line-height: 1;
 }
 
 .bismillah-text {
     font-family: 'Noto Naskh Arabic', serif;
-    font-size: 2.5rem;
-    font-weight: 500;
-    margin: 0;
-    /* This creates the gold metallic look from the image */
-    background: linear-gradient(to bottom, #fde047 0%, #b59410 100%);
+    font-size: 1.4rem; /* Balanced size */
+    font-weight: 600;
+    /* Gold Gradient from your image */
+    background: linear-gradient(180deg, #fde047 0%, #b59410 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    filter: drop-shadow(0px 2px 4px rgba(0,0,0,0.3));
+    display: inline-block;
 }
 
-@media (max-width: 640px) {
+/* Mobile optimization */
+@media (max-width: 480px) {
     .bismillah-text {
-        font-size: 1.8rem;
-        padding: 0 15px;
+        font-size: 1.1rem;
+    }
+    .bismillah-top-bar {
+        padding: 6px 0;
     }
 }
+
 
         /* Brand Text */
         .brand-text { display: flex; flex-direction: column; justify-content: center; margin-top: 3px; }
@@ -349,6 +352,16 @@ body {
 </head>
 <body>
 
+    <!-- Bismillah: Placed at the very top to prevent shifting other elements -->
+<div class="bismillah-top-bar">
+    <div dir="rtl" class="bismillah-text">بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِیْمِ</div>
+</div>
+
+<!-- The rest of your code follows below -->
+<!-- Urgent Notice Marquee -->
+<div class="marquee-bar">...</div>
+
+
     <!-- Urgent Notice Marquee -->
     <div class="marquee-bar">
         <div class="marquee-content uppercase">
@@ -422,13 +435,6 @@ body {
         
     </header>
 
-<header class="bismillah-container">
-    <div class="bismillah-inner">
-        <h1 class="bismillah-text" dir="rtl">بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِیْمِ</h1>
-    </div>
-</header>
-
-    
     <!-- MAIN DASHBOARD (Home) -->
     <main id="page-home" class="view-page active">
         
