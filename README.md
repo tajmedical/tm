@@ -1,1 +1,1 @@
-# TajMedicalStore
+# TajMedical
